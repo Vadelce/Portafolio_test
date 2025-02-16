@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Página Personalizada</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+  <script src="https://kit.fontawesome.com/YOUR_KIT_CODE.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+
+</head>
+<body>
+
+  <header class="custom-header">
+    <div class="logo">
+      <h1>MiLogo</h1>
+    </div>
+    <nav class="nav-menu">
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#servicios">Servicios</a></li>
+        <li><a href="#nosotros">Nosotros</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+    <div class="search-container">
+      <input type="text" id="searchInput" placeholder="Buscar aquí...">
+      <button class="search-button" onclick="performSearch()">🔍</button>
+    </div>
+  </header>
+
+  <section class="hero-section">
+    <div class="carrusel-container">
+      <div class="carrusel-slide">
+          <img src="./images/banner-4910264_1280.jpg" alt="Imagen 1">
+          <img src="./images/geeks-2894621_1280.jpg" alt="Imagen 2">
+          <img src="./images/mountains-3187581_1280.jpg" alt="Imagen 3">
+          <img src="./images/space-1572212_1280.jpg" alt="Imagen 4">
+          <img src="./images/universe-1566161_1280.jpg" alt="Imagen 5">
+      </div>
+      <button class="nav-button prev">&#10094;</button>
+      <button class="nav-button next">&#10095;</button>
+      <div class="dots">
+          <span class="dot active" data-index="0"></span>
+          <span class="dot" data-index="1"></span>
+          <span class="dot" data-index="2"></span>
+          <span class="dot" data-index="3"></span>
+          <span class="dot" data-index="4"></span>
+      </div>
+    </div>
+  </section>
+
+  <section class="carousel-section">
+    <h2>Nuestros Servicios</h2>
+    <div class="carousel-container">
+        <div class="carousel">
+            <div class="card">
+                <img src="img1.jpg" alt="Servicio 1">
+                <p>Descripción del servicio 1</p>
+                <button class="btn-solid">Ver más</button>
+                <button class="btn-outline">Detalles</button>
+            </div>
+            <div class="card">
+                <img src="img2.jpg" alt="Servicio 2">
+                <p>Descripción del servicio 2</p>
+                <button class="btn-solid">Ver más</button>
+                <button class="btn-outline">Detalles</button>
+            </div>
+            <div class="card">
+                <img src="img3.jpg" alt="Servicio 3">
+                <p>Descripción del servicio 3</p>
+                <button class="btn-solid">Ver más</button>
+                <button class="btn-outline">Detalles</button>
+            </div>
+            <div class="card">
+                <img src="img4.jpg" alt="Servicio 4">
+                <p>Descripción del servicio 4</p>
+                <button class="btn-solid">Ver más</button>
+                <button class="btn-outline">Detalles</button>
+            </div>
+            <div class="card">
+                <img src="img5.jpg" alt="Servicio 5">
+                <p>Descripción del servicio 5</p>
+                <button class="btn-solid">Ver más</button>
+                <button class="btn-outline">Detalles</button>
+            </div>
+            <div class="card">
+                <img src="img6.jpg" alt="Servicio 6">
+                <p>Descripción del servicio 6</p>
+                <button class="btn-solid">Ver más</button>
+                <button class="btn-outline">Detalles</button>
+            </div>
+            <div class="card">
+                <img src="img7.jpg" alt="Servicio 7">
+                <p>Descripción del servicio 7</p>
+                <button class="btn-solid">Ver más</button>
+                <button class="btn-outline">Detalles</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+  <section class="content">
+    <div class="images">
+        <img src="https://via.placeholder.com/300" alt="Imagen 1">
+        <img src="https://via.placeholder.com/300" alt="Imagen 2">
+    </div>
+    <div class="text">
+        <h2>Título de la Sección</h2>
+        <p>Este es un texto descriptivo sobre el tema que se está tratando en esta sección. Puede ser información sobre un servicio, un producto o cualquier otro contenido relevante.</p>
+    </div>
+</section>
+
+<section class="form-container">
+    <h2>Solicita tu Cita</h2>
+    <form id="appointment-form">
+        <input type="text" id="name" placeholder="Nombre" required>
+        <input type="email" id="email" placeholder="Correo Electrónico" required>
+        <input type="date" id="date" required>
+        <textarea id="message" placeholder="Mensaje"></textarea>
+        <button type="submit">Enviar</button>
+    </form>
+</section>
+
+<footer>
+  <!-- Menú de enlaces en horizontal -->
+  <div class="footer-menu">
+      <a href="#">Inicio</a> |
+      <a href="#">Nosotros</a> |
+      <a href="#">Servicios</a> |
+      <a href="#">Contacto</a>
+  </div>
+
+  <!-- Información de contacto en una sola línea -->
+  <div class="footer-contact">
+      📍 Calle Falsa 123, Ciudad, País | 📞 +123 456 789 | ✉️ <a href="mailto:contacto@ejemplo.com">contacto@ejemplo.com</a>
+  </div>
+
+  <!-- Mapa -->
+  <div class="footer-map">
+      <div id="map"></div>
+  </div>
+
+  <!-- Redes Sociales en horizontal -->
+  <div class="social-links">
+      <a href="#" class="social-icon"><i class="fa-brands fa-facebook-f"></i></a>
+      <a href="#" class="social-icon"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#" class="social-icon"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#" class="social-icon"><i class="fa-brands fa-linkedin-in"></i></a>
+
+  </div>
+  
+</footer>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
